@@ -1,0 +1,28 @@
+.nav {
+    backdrop-filter: blur(1px);
+    box-shadow: 0 6px 12px rgb(148 109 67);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: min(500px, 90%);
+}
+
+.navItem {
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 999px;
+    padding: 10px;
+    transition: all 200ms ease-in-out;
+}
+
+.navItem.active {
+    background-color: rgb(148 109 67 / 0.35);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 6px 8px rgb(148 109 67);
+}
+
+.navItem:hover {
+    background-color: rgb(148 109 67 / 0.15);
+    backdrop-filter: blur(1px);
+    box-shadow: 0 6px 8px rgb(148 109 67);
+}
