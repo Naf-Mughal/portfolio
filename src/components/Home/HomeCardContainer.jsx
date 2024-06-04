@@ -2,11 +2,28 @@ import React from 'react'
 import HomeCard from './HomeCard'
 
 function HomeCardContainer() {
+    const objArr = [
+        {
+            index: 1,
+        },
+        {
+            index: 2,
+        },
+        {
+            index: 3,
+        },
+        {
+            index: 4,
+        },
+    ];
+
     return (
         <div className="w-[60%] flex items-center justify-end relative homeCradContainer">
-            <HomeCard style={{'--number' : 1}} />
-            <HomeCard style={{'--number' : 1}} />
-            <HomeCard style={{'--number' : 1}} />
+            {
+                objArr.map(item => (
+                    <HomeCard key={item.index} style={{ '--number': item.index }} getRef={item.index} />
+                ))
+            }
         </div>
     )
 }

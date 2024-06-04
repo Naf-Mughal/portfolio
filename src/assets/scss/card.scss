@@ -1,8 +1,7 @@
-.homeCard{
+.homeCard {
     width: 50%;
     height: 70%;
+    border: 8px solid white;
+    border-radius: 8px;
+    transform: translate3d(calc(var(--number) * 20px), calc(var(--number) * 20px), calc(var(--number) * 20px));
 }
-
-// .homeCradContainer:nth-child(){
-
-// }
