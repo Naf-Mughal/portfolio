@@ -3,12 +3,8 @@ import HomeCardContainer from '../../components/Home/HomeCardContainer'
 
 function Home() {
     return (
-        <section className='w-full flex h-full'>
-            <div className="w-[30%] flex h-full items-center justify-center">
-                <div className="h-[60%] w-[90%] bg-sec">
-
-                </div>
-            </div>
+        <section className='w-full flex justify-between px-16'>
+            <div className="h-[70vh] w-[30%] bg-sec sticky top-[calc(50%-30vh)]"></div>
             <HomeCardContainer />
         </section>
     )

@@ -1,7 +1,10 @@
 .homeCard {
-    width: 50%;
-    height: 70%;
+    width: 40vw;
+    height: 80vh;
+    margin-bottom: 20vh;
     border: 8px solid white;
     border-radius: 8px;
-    transform: translate3d(calc(var(--number) * 20px), calc(var(--number) * 20px), calc(var(--number) * 20px));
+    // top: calc(var(--offset) * 1px);
+    top: 120px;
+    transform: translate3d(calc(var(--number) * -20px), calc(var(--number) * 20px), calc(var(--number) * 20px));
 }

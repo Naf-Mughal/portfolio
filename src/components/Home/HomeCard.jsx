@@ -1,12 +1,8 @@
-import React, { createRef, useRef } from 'react'
+import React, { useRef } from 'react'
 
-function HomeCard({ style, getRef }) {
-    const ref = useRef(getRef);
-    console.log(ref)
-
+function HomeCard({ style }) {
     return (
-        <div className="homeCard bg-sec absolute" style={style} ref={ref}>
-
+        <div className="homeCard bg-sec sticky" style={style}>
         </div>
     )
 }

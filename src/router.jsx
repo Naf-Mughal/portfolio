@@ -9,6 +9,7 @@ import AdminLayout from "./layouts/admin.layout";
 import BlogLayout from "./layouts/blog.layout";
 import Admin from "./pages/Admin";
 import Blog from "./pages/Blog";
+import Works from "./pages/Portfolio/works";
 
 export const router = createBrowserRouter([
     {
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
             {
                 path:'',
                 element: <Home />,
+            },
+            {
+                path:'works',
+                element: <Works />,
             },
         ],
     },

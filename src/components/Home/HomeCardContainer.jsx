@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import HomeCard from './HomeCard'
 
 function HomeCardContainer() {
@@ -13,15 +13,15 @@ function HomeCardContainer() {
             index: 3,
         },
         {
-            index: 4,
+            index: 4
         },
     ];
 
     return (
-        <div className="w-[60%] flex items-center justify-end relative homeCradContainer">
+        <div>
             {
                 objArr.map(item => (
-                    <HomeCard key={item.index} style={{ '--number': item.index }} getRef={item.index} />
+                    <HomeCard key={item.index} style={{ '--number': item.index}} />
                 ))
             }
         </div>

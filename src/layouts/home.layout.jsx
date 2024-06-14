@@ -6,7 +6,7 @@ import HeaderComponent from '../components/Header'
 
 function HomeLayout({ children }) {
     return (
-        <section className='bg-light h-[100vh] relative'>
+        <section>
             <HeaderComponent />
             <Outlet />
             <HomeNav />
